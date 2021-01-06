@@ -20,48 +20,37 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.yellowAccent,
         ),
-      body:Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
+      body:Row(
 
-            children: [
-              Container(
-                child: Text('everyone'),
-                padding: EdgeInsets.all(30.0),
-                color: Colors.lightGreenAccent,
-              ),
-              Text('hello',
-              style: TextStyle(
-                backgroundColor: Colors.indigo
-              ),),
-              Text('world',
-                style: TextStyle(
-                    backgroundColor: Colors.green
-                ),)
-            ],
+        children: [
+          Expanded(
+            flex: 3,
+              child: Image.asset('images/space4.jpg')),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.lightGreenAccent,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            child: Text('one'),
-            color: Colors.lightBlue,
-            padding: EdgeInsets.all(20.0),
+          Expanded(
+            flex: 1,
+            child: Container(padding: EdgeInsets.all(30.0),
+              color: Colors.lightBlue,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            child: Text('two'),
-            color: Colors.amber,
-            padding: EdgeInsets.all(35.0),
+          Expanded(
+            flex: 1,
+            child: Container(padding: EdgeInsets.all(30.0),
+              color: Colors.deepPurpleAccent,
+              child: Text('3'),
+            ),
           ),
-          Container(
-            child: Text('three'),
-            color: Colors.deepOrange,
-            padding: EdgeInsets.all(50.0),
-          ),
+
         ],
       ),
-
     floatingActionButton: FloatingActionButton(
       child:Text(
           'click',
