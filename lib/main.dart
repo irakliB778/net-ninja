@@ -20,9 +20,7 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.yellowAccent,
         ),body:Center(
-      child:Image(
-        image:AssetImage('images/space2.jpg'),
-      )
+      child:Image.asset('images/space-1.jpg')
     ),floatingActionButton: FloatingActionButton(
       child:Text('click'),
       backgroundColor: Colors.yellowAccent,
