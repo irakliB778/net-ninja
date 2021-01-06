@@ -19,16 +19,14 @@ class Home extends StatelessWidget {
           ),
           centerTitle: true,
           backgroundColor: Colors.yellowAccent,
-        ),body:Center(
-      child:IconButton(
-        onPressed: () {
-          print('button was clicked');
-        },
-        icon: Icon(Icons.alternate_email),
-        color: Colors.yellowAccent,
-        iconSize: 56,
-      )
-    ),floatingActionButton: FloatingActionButton(
+        ),body:Container(
+      color: Colors.cyan,
+      child: Text('samthing'),
+      padding: EdgeInsets.symmetric(vertical: 40.0, horizontal: 40.0),
+      margin: EdgeInsets.all(50),
+
+    ),
+    floatingActionButton: FloatingActionButton(
       child:Text(
           'click',
         style:TextStyle(
