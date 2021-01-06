@@ -19,13 +19,15 @@ class Home extends StatelessWidget {
           ),
           centerTitle: true,
           backgroundColor: Colors.yellowAccent,
-        ),body:Container(
-      color: Colors.cyan,
-      child: Text('samthing'),
-      padding: EdgeInsets.symmetric(vertical: 40.0, horizontal: 40.0),
-      margin: EdgeInsets.all(50),
+        ),
+      body:Padding(
+
+        padding: EdgeInsets.only(left: 60.0, top: 80.0, right: 60.0,bottom: 60.0),
+        child: Text('click me'),
+
 
     ),
+
     floatingActionButton: FloatingActionButton(
       child:Text(
           'click',
