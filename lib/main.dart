@@ -20,20 +20,14 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.yellowAccent,
         ),body:Center(
-      child:Text(
-          'Irakklis App',
-          style:TextStyle(
-              fontSize: 19.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3.0,
-              fontFamily: 'IndieFlower'
-          )
-      ),
+      child:Image(
+        image:AssetImage('images/space2.jpg'),
+      )
     ),floatingActionButton: FloatingActionButton(
       child:Text('click'),
       backgroundColor: Colors.yellowAccent,
     ),
-        backgroundColor: Colors.lightBlue[700]
+       // backgroundColor: Colors.lightBlue[700]
     );
   }
 }
